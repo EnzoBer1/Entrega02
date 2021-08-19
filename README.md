@@ -21,3 +21,9 @@ Caso 3; Longdouble, corrida 10 y N = 5000, overwrite_a = True
 Caso 2; Longdouble, corrida 10 y N = 5000, overwrite_a = False
 ![image](https://user-images.githubusercontent.com/89056734/129997716-4ac6449e-28aa-4257-b1b2-44efd117d401.png)
 
+==> ¿Qué algoritmo de inversión cree que utiliza cada método (ver wiki)? Justifique claramente su respuesta. 
+Respuesta:
+
+==> ¿Como incide el paralelismo y la estructura de caché de su procesador en el desempeño en cada caso? Justifique su comentario en base al uso de procesadores y memoria observado durante las corridas. 
+Respuesta:
+
