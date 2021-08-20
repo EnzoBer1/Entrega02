@@ -1,5 +1,6 @@
 # P0
 
+ENTREGAS EN ESTE README HASTA EL MOMENTO: P0E3 y P0E4.
 Link Repositorio: https://github.com/EnzoBer1/P0
 
 En esta entrega se comparará el tiempo que tarda la librería numpy y scipy en invertir una matriz cuadrada de gran tamaño una cierta cantidad de veces. Para ambos casos se susaran datos tipo half, single, double y longdouble (siempre que el computador lo permita). Ahora bien, para scipy, como se puede elegir si usar o no la función overwrite_a, la cual reescribe los datos, se comparará el rendimiento para ver efectivamente cual optimiza el proceso. 
