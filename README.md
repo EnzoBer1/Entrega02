@@ -47,5 +47,6 @@ Los resultados por ejemplo de la función scipy.linalg.solve fueron los siguient
 
 Aquí se ve como x = solve(A,b, assume_a="pos") da el tiempo de ejecución más bajo, es decir, es la configuración más rápida para resolver el sistema. Por otro lado, se ve como usando el método de invertir A y luego multiplicarla por b da los tiempos más bajos para matrices pequeñas, pero una vez que aumenta el tamaño de dichas matrices, se convierte en el proceso más lento.
 
+Para comparar rendimientos para cada tipo de dato, se harán distintos gráficos, comparando el rendimiento de cada función (solve y eigh) con sus configuraciones o parámetros por defecto, contra el rendimiento de cada caso de driver con overwrite_a = True y overwrite_a = False. Los resultados se presentan a continuación:
 
 
