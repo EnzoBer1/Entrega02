@@ -3,6 +3,10 @@
 ENTREGAS EN ESTE README HASTA EL MOMENTO: P0E3 y P0E4.
 Link Repositorio: https://github.com/EnzoBer1/P0
 
+###################################################################################################################################################################################
+
+ENTREGA P0E3
+
 En esta entrega se comparará el tiempo que tarda la librería numpy y scipy en invertir una matriz cuadrada de gran tamaño una cierta cantidad de veces. Para ambos casos se susaran datos tipo half, single, double y longdouble (siempre que el computador lo permita). Ahora bien, para scipy, como se puede elegir si usar o no la función overwrite_a, la cual reescribe los datos, se comparará el rendimiento para ver efectivamente cual optimiza el proceso. 
 
 Incoveniente 1: Para el Caso 1 (Numpy.inv) utilizando un np.half no corrió el codigo, es más, ni siquiera pudo importarse al momento de crear la matriz laplaciana. Viendo el error que arroja python, se aprecia que en el caso de usar linalg con numpy, no es posible operar el float 16.
@@ -35,6 +39,8 @@ Respuesta: Numpy usa una factorización LU para encontrar la solución de Ax = b
 
 Respuesta: El objetivo principal de la caché es aumentar el rendimiento de recuperación de datos para evitar tener que acceder a la capa subyacente de almacenamiento, que es más lenta. El paralelismo es la capacidad del programa de hacer cosas en simultáneo en vez de seguir un hilo de procesos. Python lamentablemente no permite usar paralelismo, lo que fuerza al computador a seguir el hilo programado, ahora bien, usando la funnción overwrite, se recuperan los datos con mayor rapidez para así aumentar el rendimiento del procesador, almacenando datos de manera transitoria e iterativa, tal como se observó al comparar los tiempos de inversión para un N alto, para los casos 2 y 3.
 
+###################################################################################################################################################################################
+
 ENTREGA P0E4
 
 Esta entrega constará de analizar el desempeño de la función scipy.linalg.solve para encontrar el vector x solución del sistema Ax = b, siendo b un vector de unos, y A la mariz laplaciana de la entrega P0E3. Se analizará el desempeño para distintos tipos de datos (float y double); para distintas configuraciones de la función solve (6 casos en total)
@@ -48,6 +54,10 @@ Los resultados por ejemplo de la función scipy.linalg.solve fueron los siguient
 
 Aquí se ve como x = solve(A,b, assume_a="pos") da el tiempo de ejecución más bajo, es decir, es la configuración más rápida para resolver el sistema. Por otro lado, se ve como usando el método de invertir A y luego multiplicarla por b da los tiempos más bajos para matrices pequeñas, pero una vez que aumenta el tamaño de dichas matrices, se convierte en el proceso más lento.
 
-Para comparar rendimientos para cada tipo de dato, se harán distintos gráficos, comparando el rendimiento de cada función (solve y eigh) con sus configuraciones o parámetros por defecto, contra el rendimiento de cada caso de driver con overwrite_a = True y overwrite_a = False. Los resultados se presentan a continuación:
+Para comparar rendimientos para cada tipo de dato, se harán distintos gráficos, comparando el rendimiento de cada función (solve y eigh) con sus configuraciones o parámetros por defecto, contra el rendimiento de cada caso de driver con overwrite_a = True y overwrite_a = False. Los resultados se presentan a continuación.
+
+==> Rendimiento de la función Scipy.linalg.solve() para tipo de dato "float" (sinlge) para N del 2 al 10.000:
+![image](https://user-images.githubusercontent.com/89056734/130293954-0d1da7de-8faa-4e09-893d-a8db26fed279.png)
+
 
 
