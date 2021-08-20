@@ -57,6 +57,6 @@ Para comparar rendimientos para cada tipo de dato, se harán distintos gráficos
 ==> Rendimiento de la función Scipy.linalg.solve() para tipo de dato "double" para N del 2 al 10.000:
 
 
-Aquí se ve como x = solve(A,b, assume_a="pos") da el tiempo de ejecución más bajo, es decir, es la configuración más rápida para resolver el sistema. Por otro lado, se ve como usando el método de invertir A y luego multiplicarla por b da los tiempos más bajos para matrices pequeñas, pero una vez que aumenta el tamaño de dichas matrices, se convierte en el proceso más lento.
+Aquí se ve como x = solve(A,b, assume_a="pos") da el tiempo de ejecución más bajo, es decir, es la configuración más rápida para resolver el sistema. Por otro lado, se ve como usando el método de invertir A y luego multiplicarla por b da los tiempos más bajos para matrices pequeñas, pero una vez que aumenta el tamaño de dichas matrices, se convierte en el proceso más lento. También, se nota como los parámetros por defecto de la función dan los tiempos más lentos para matrices pequeñas y unos no tan buenos para las grandes, lo que indica que casi por "obligación" se deben de modificar los parámetros para obtener tiempos de ejecución bajos.
 
 
