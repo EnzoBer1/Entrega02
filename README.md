@@ -57,7 +57,11 @@ Aquí se ve como x = solve(A,b, assume_a="pos") da el tiempo de ejecución más 
 Para comparar rendimientos para cada tipo de dato, se harán distintos gráficos, comparando el rendimiento de cada función (solve y eigh) con sus configuraciones o parámetros por defecto, contra el rendimiento de cada caso de driver con overwrite_a = True y overwrite_a = False. Los resultados se presentan a continuación.
 
 ==> Rendimiento de la función Scipy.linalg.solve() para tipo de dato "float" (sinlge) para N del 2 al 10.000:
+
 ![image](https://user-images.githubusercontent.com/89056734/130293954-0d1da7de-8faa-4e09-893d-a8db26fed279.png)
+
+
+==> Rendimiento de la función Scipy.linalg.solve() para tipo de dato "double" para N del 2 al 10.000:
 
 
 
