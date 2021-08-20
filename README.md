@@ -42,10 +42,10 @@ Con el mismo procedimiento, se analizará la función scipy.linalg.eigh (la cual
 
 Los resultados por ejemplo de la función scipy.linalg.solve fueron los siguientes:
 
-![image](https://user-images.githubusercontent.com/89056734/130177232-eb9016c2-9b20-42e5-84a3-d9e82b511ab4.png)
+![image](https://user-images.githubusercontent.com/89056734/130183980-63c0383e-570c-4636-aa0d-7e315bf29ebf.png)
 
 
-Aquí se ve como x = solve(A,b, assume_a="pos") da el tiempo de ejecución más bajo, es decir, es la configuración más rápida para resolver el sistema.
+Aquí se ve como x = solve(A,b, assume_a="pos") da el tiempo de ejecución más bajo, es decir, es la configuración más rápida para resolver el sistema. Por otro lado, se ve como usando el método de invertir A y luego multiplicarla por b da los tiempos más bajos para matrices pequeñas, pero una vez que aumenta el tamaño de dichas matrices, se convierte en el proceso más lento.
 
 
 
