@@ -47,13 +47,6 @@ Esta entrega constará de analizar el desempeño de la función scipy.linalg.sol
 Luego, se graficarán los resultados en una misma figura con el fin de comparar los tiempos en que se ejecuta la ecuación matricial. 
 Con el mismo procedimiento, se analizará la función scipy.linalg.eigh (la cual entrega los valores y vectores propios de una matriz), para los mismos tipos de datos y 5 distintas configuraciones. La idea es poder comparar directamente en un mismo gráfico y ver rápidamente cual configuración optimiza cada proceso.
 
-Los resultados por ejemplo de la función scipy.linalg.solve fueron los siguientes:
-
-![image](https://user-images.githubusercontent.com/89056734/130183980-63c0383e-570c-4636-aa0d-7e315bf29ebf.png)
-
-
-Aquí se ve como x = solve(A,b, assume_a="pos") da el tiempo de ejecución más bajo, es decir, es la configuración más rápida para resolver el sistema. Por otro lado, se ve como usando el método de invertir A y luego multiplicarla por b da los tiempos más bajos para matrices pequeñas, pero una vez que aumenta el tamaño de dichas matrices, se convierte en el proceso más lento.
-
 Para comparar rendimientos para cada tipo de dato, se harán distintos gráficos, comparando el rendimiento de cada función (solve y eigh) con sus configuraciones o parámetros por defecto, contra el rendimiento de cada caso de driver con overwrite_a = True y overwrite_a = False. Los resultados se presentan a continuación.
 
 ==> Rendimiento de la función Scipy.linalg.solve() para tipo de dato "float" (sinlge) para N del 2 al 10.000:
@@ -63,5 +56,7 @@ Para comparar rendimientos para cada tipo de dato, se harán distintos gráficos
 
 ==> Rendimiento de la función Scipy.linalg.solve() para tipo de dato "double" para N del 2 al 10.000:
 
+
+Aquí se ve como x = solve(A,b, assume_a="pos") da el tiempo de ejecución más bajo, es decir, es la configuración más rápida para resolver el sistema. Por otro lado, se ve como usando el método de invertir A y luego multiplicarla por b da los tiempos más bajos para matrices pequeñas, pero una vez que aumenta el tamaño de dichas matrices, se convierte en el proceso más lento.
 
 
