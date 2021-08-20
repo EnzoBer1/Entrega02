@@ -40,6 +40,9 @@ Esta entrega constará de analizar el desempeño de la función scipy.linalg.sol
 Luego, se graficarán los resultados en una misma figura con el fin de comparar los tiempos en que se ejecuta la ecuación matricial. 
 Con el mismo procedimiento, se analizará la función scipy.linalg.eigh (la cual entrega los valores y vectores propios de una matriz), para los mismos tipos de datos y 5 distintas configuraciones. La idea es poder comparar directamente en un mismo gráfico y ver rápidamente cual configuración optimiza cada proceso.
 
+Los resultados por ejemplo de la función scipy.linalg.solve fueron los siguientes:
+![image](https://user-images.githubusercontent.com/89056734/130177232-eb9016c2-9b20-42e5-84a3-d9e82b511ab4.png)
+Aquí se ve como x = solve(A,b, assume_a="pos") da el tiempo de ejecución más bajo, es decir, es la configuración más rápida para resolver el sistema.
 
 
 
