@@ -34,7 +34,7 @@ Respuesta: Numpy usa una factorización LU para encontrar la solución de Ax = b
 
 Respuesta: El objetivo principal de la caché es aumentar el rendimiento de recuperación de datos para evitar tener que acceder a la capa subyacente de almacenamiento, que es más lenta. El paralelismo es la capacidad del programa de hacer cosas en simultáneo en vez de seguir un hilo de procesos. Python lamentablemente no permite usar paralelismo, lo que fuerza al computador a seguir el hilo programado, ahora bien, usando la funnción overwrite, se recuperan los datos con mayor rapidez para así aumentar el rendimiento del procesador, almacenando datos de manera transitoria e iterativa, tal como se observó al comparar los tiempos de inversión para un N alto, para los casos 2 y 3.
 
-ENTREGA P0E3
+ENTREGA P0E4
 
 Esta entrega constará de analizar el desempeño de la función scipy.linalg.solve para encontrar el vector x solución del sistema Ax = b, siendo b un vector de unos, y A la mariz laplaciana de la entrega P0E3. Se analizará el desempeño para distintos tipos de datos (float y double); para distintas configuraciones de la función solve (6 casos en total)
 Luego, se graficarán los resultados en una misma figura con el fin de comparar los tiempos en que se ejecuta la ecuación matricial. 
