@@ -84,4 +84,4 @@ Puede verse como el caso de scipy.linalg.eigh() con driver = "ev" y overwrite_a 
 
 ==> ¿Como es la variabilidad del tiempo de ejecucion para cada algoritmo? ¿Qué algoritmo gana (en promedio) en cada caso? ¿Depende del tamaño de la matriz? ¿A que se puede deber la superioridad de cada opción? ¿Su computador usa más de un proceso por cada corrida? ¿Que hay del uso de memoria (como crece)? 
 
-Respuesta: Tal como se ve en los gráficos anteriores, el caso de la función scipy.linalg.eigh() con driver = "evx" y overwrite_a = False es el proceso que posee MAYOR variabilidad en los tiempos de ejecución.
+Respuesta: Tal como se ve en los gráficos anteriores, el caso de la función scipy.linalg.eigh() con driver = "evx" y overwrite_a = False, y driver = "ev" y overwrite_a = Trie son los procesos que poseen MAYOR variabilidad en los tiempos de ejecución.
