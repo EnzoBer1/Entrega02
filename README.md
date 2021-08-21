@@ -58,6 +58,15 @@ Aquí se ve como x = solve(A,b, assume_a="pos") da el tiempo de ejecución más 
 
 ==> Rendimiento de la función Scipy.linalg.solve() para tipo de dato "double" para N del 2 al 10.000:
 
+![image](https://user-images.githubusercontent.com/89056734/130304330-aff3cf96-7b4a-435d-ab9a-c2686b25ffc8.png)
 
 
+==> Rendimiento de la función Scipy.linalg.eigh() para tipo de dato "float" (sinlge) para N del 2 al 10.000:
+![image](https://user-images.githubusercontent.com/89056734/130304350-98f58515-154e-4612-be88-56d21ffd4e60.png)
+![image](https://user-images.githubusercontent.com/89056734/130304354-866ef826-7dfc-41aa-9908-ad1d64ee7544.png)
+![image](https://user-images.githubusercontent.com/89056734/130304363-42192c0b-f656-460c-9687-eb58fe0ac86c.png)
+![image](https://user-images.githubusercontent.com/89056734/130304367-767fe28a-f580-44e2-84d1-0a237f5ab297.png)
+
+
+==> Rendimiento de la función Scipy.linalg.eigh() para tipo de dato "double" para N del 2 al 10.000:
 
