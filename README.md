@@ -65,16 +65,21 @@ En este caso, cuando se usa una matriz definida positiva (assume_a = pos), se ob
 
 
 ==> Rendimiento de la función Scipy.linalg.eigh() para tipo de dato "float" (sinlge) para N del 2 al 10.000:
+
+
 ![image](https://user-images.githubusercontent.com/89056734/130304350-98f58515-154e-4612-be88-56d21ffd4e60.png)
 ![image](https://user-images.githubusercontent.com/89056734/130304354-866ef826-7dfc-41aa-9908-ad1d64ee7544.png)
 ![image](https://user-images.githubusercontent.com/89056734/130304363-42192c0b-f656-460c-9687-eb58fe0ac86c.png)
 ![image](https://user-images.githubusercontent.com/89056734/130304367-767fe28a-f580-44e2-84d1-0a237f5ab297.png)
+
 
 Por temas de simplicidad se usa N hasta 5000, ya que el tiempo de ejecución al usar N = 10.000 pasa los 2 minutos; se muestran 4 gráficos en donde se comparan cada uno de 4 casos v/s el rendimiento con parámetros por defecto.
 Puede verse como el caso de scipy.linalg.eigh() con driver = "ev" y overwrite_a = True es el MENOS eficiente al momento de encontrar los valores y vectores propios de la matriz. Por otro lado, y a diferencia de la función solve(), el caso por defecto es el que mejor optimiza el proceso (entre algunos otro), por lo que en esta función eigh() NO es estrictamente necesario cambiar parámetros para obtener el mejor rendimiento.
 
 
 ==> Rendimiento de la función Scipy.linalg.eigh() para tipo de dato "double" para N del 2 al 10.000:
+
+
 ![image](https://user-images.githubusercontent.com/89056734/130306987-35a80223-ef9b-45d0-8fe7-1fc58a0e74cd.png)
 ![image](https://user-images.githubusercontent.com/89056734/130306991-244f5a70-59b0-4ec1-9941-e36b1f2c7a95.png)
 ![image](https://user-images.githubusercontent.com/89056734/130306994-d1bd7b7e-bb1d-4b08-80d4-d4c6892e9b28.png)
