@@ -75,7 +75,11 @@ Puede verse como el caso de scipy.linalg.eigh() con driver = "ev" y overwrite_a 
 
 
 ==> Rendimiento de la función Scipy.linalg.eigh() para tipo de dato "double" para N del 2 al 10.000:
-
+![image](https://user-images.githubusercontent.com/89056734/130306987-35a80223-ef9b-45d0-8fe7-1fc58a0e74cd.png)
+![image](https://user-images.githubusercontent.com/89056734/130306991-244f5a70-59b0-4ec1-9941-e36b1f2c7a95.png)
+![image](https://user-images.githubusercontent.com/89056734/130306994-d1bd7b7e-bb1d-4b08-80d4-d4c6892e9b28.png)
+![image](https://user-images.githubusercontent.com/89056734/130306997-818d0424-8a51-4fa4-8cb0-b0108ca9ef6f.png)
+ 
 
 
 
