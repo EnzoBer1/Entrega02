@@ -70,7 +70,7 @@ En este caso, cuando se usa una matriz definida positiva (assume_a = pos), se ob
 ![image](https://user-images.githubusercontent.com/89056734/130304363-42192c0b-f656-460c-9687-eb58fe0ac86c.png)
 ![image](https://user-images.githubusercontent.com/89056734/130304367-767fe28a-f580-44e2-84d1-0a237f5ab297.png)
 
-Por temas de simplicidad y presentación, se muestran 4 gráficos en donde se comparan cada uno de 4 casos v/s el rendimiento con parámetros por defecto.
+Por temas de simplicidad se usa N hasta 5000, ya que el tiempo de ejecución al usar N = 10.000 pasa los 2 minutos; se muestran 4 gráficos en donde se comparan cada uno de 4 casos v/s el rendimiento con parámetros por defecto.
 Puede verse como el caso de scipy.linalg.eigh() con driver = "ev" y overwrite_a = True es el MENOS eficiente al momento de encontrar los valores y vectores propios de la matriz. Por otro lado, y a diferencia de la función solve(), el caso por defecto es el que mejor optimiza el proceso (entre algunos otro), por lo que en esta función eigh() NO es estrictamente necesario cambiar parámetros para obtener el mejor rendimiento.
 
 
