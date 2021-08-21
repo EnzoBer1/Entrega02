@@ -76,3 +76,12 @@ Puede verse como el caso de scipy.linalg.eigh() con driver = "ev" y overwrite_a 
 
 ==> Rendimiento de la función Scipy.linalg.eigh() para tipo de dato "double" para N del 2 al 10.000:
 
+
+
+
+
+
+
+==> ¿Como es la variabilidad del tiempo de ejecucion para cada algoritmo? ¿Qué algoritmo gana (en promedio) en cada caso? ¿Depende del tamaño de la matriz? ¿A que se puede deber la superioridad de cada opción? ¿Su computador usa más de un proceso por cada corrida? ¿Que hay del uso de memoria (como crece)? 
+
+Respuesta:
