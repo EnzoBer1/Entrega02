@@ -61,6 +61,8 @@ Aquí se ve como x = solve(A,b, assume_a="pos") da el tiempo de ejecución más 
 
 ![image](https://user-images.githubusercontent.com/89056734/130304330-aff3cf96-7b4a-435d-ab9a-c2686b25ffc8.png)
 
+En este caso, cuando se usa una matriz definida positiva (assume_a = pos), se obtiene el mejor desempeño. Por otro lado, al usar el proceso de invertir la matriz y luego multilicarla por b, se obtiene el peor rendimiento.
+
 
 ==> Rendimiento de la función Scipy.linalg.eigh() para tipo de dato "float" (sinlge) para N del 2 al 10.000:
 ![image](https://user-images.githubusercontent.com/89056734/130304350-98f58515-154e-4612-be88-56d21ffd4e60.png)
