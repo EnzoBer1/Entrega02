@@ -103,6 +103,7 @@ En esta entrega se usarán por primera vez matrices dispersas, las cuales corres
 El código de ensamblaje para la matriz laplaciana utilizado fue el siguiente:
 
 def laplaciana(N):
+
     A = zeros((N,N), dtype = double)
     
     for i in range(N):
