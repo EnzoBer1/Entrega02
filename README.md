@@ -101,3 +101,10 @@ ENTREGA P0E5
 En esta entrega se usarán por primera vez matrices dispersas, las cuales corresponden a dichas matrices en las cuales los ceros dentro de ella, no se consideran dentro de las operaciones matemáticas en Python, ahorrando así tiempo y memoria, además de bajar considerablemente la complejidad computacional de la operación. En 
 
 En primer lugar, se analizará el desempeño de la función MATMUL (multiplicación de matrices) para las matrices llenas Laplacianas de tamaño N creciente, corriendo 10 veces cada N, luego se graficarán las líneas de complejidad computacional y la gráfica de desempeño (en segundos) correspondiente. En segundo lugar, usando la función sparse.csr_matrix() se multiplicarán matrices dispersas laplacianas, y se analizarán de igual manera que para las matrices llenas.
+
+A continuación se muestran los resultados:
+
+![image](https://user-images.githubusercontent.com/89056734/131061194-8c98ea63-682e-49c7-a761-02b2197b4121.png)
+![image](https://user-images.githubusercontent.com/89056734/131061208-cd9cb15a-bb12-4816-9b76-7d49b7aaece8.png)
+
+
