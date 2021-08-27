@@ -98,7 +98,7 @@ Respuesta: Tal como se ve en los gráficos anteriores, el caso de la función sc
 
 ENTREGA P0E5
 
-En esta entrega se usarán por primera vez matrices dispersas, las cuales corresponden a dichas matrices en las cuales los ceros dentro de ella, no se consideran dentro de las operaciones matemáticas en Python, ahorrando así tiempo y memoria, además de bajar considerablemente la complejidad computacional de la operación. En 
+En esta entrega se usarán por primera vez matrices dispersas, las cuales corresponden a dichas matrices en las cuales los ceros dentro de ella, no se consideran dentro de las operaciones matemáticas en Python, ahorrando así tiempo y memoria, además de bajar considerablemente la complejidad computacional de la operación. Para ambos casos se usarán datos tipo DOUBLE y el mismo código para generar matrices laplacianas de tamaño N de las entregas pasadas, ahora dichas funciones laplacianas estarán al principio de cada código.
 
 En primer lugar, se analizará el desempeño de la función MATMUL (multiplicación de matrices) para las matrices llenas Laplacianas de tamaño N creciente, corriendo 10 veces cada N, luego se graficarán las líneas de complejidad computacional y la gráfica de desempeño (en segundos) correspondiente. En segundo lugar, usando la función sparse.csr_matrix() se multiplicarán matrices dispersas laplacianas, y se analizarán de igual manera que para las matrices llenas.
 
