@@ -1,6 +1,6 @@
 # P0
 
-ENTREGAS EN ESTE README HASTA EL MOMENTO: P0E3 y P0E4.
+ENTREGAS EN ESTE README HASTA EL MOMENTO: P0E3 , P0E4 , P0E5.
 
 Link Repositorio: https://github.com/EnzoBer1/P0
 
@@ -92,3 +92,12 @@ Se aprecia como los parámetros por defecto comtinúan siendo los más eficiente
 ==> ¿Como es la variabilidad del tiempo de ejecucion para cada algoritmo? ¿Qué algoritmo gana (en promedio) en cada caso? ¿Depende del tamaño de la matriz? ¿A que se puede deber la superioridad de cada opción? ¿Su computador usa más de un proceso por cada corrida? ¿Que hay del uso de memoria (como crece)? 
 
 Respuesta: Tal como se ve en los gráficos anteriores, el caso de la función scipy.linalg.eigh() con driver = "evx" y overwrite_a = False, y driver = "ev" y overwrite_a = Trie son los procesos que poseen MAYOR variabilidad (para float) en los tiempos de ejecución, los datos tipo "double" no presentaron varianzas considarables a salvo para N pequeños. Los algoritmos ganadores se comentaron bajo los gráficos, siendo los parámetros por defecto muy buenas opciones. Los procesadores del computador se ocuparon casi en su mayoría. El uso de memoria (como se puede ver en los txt), permanecen constantes para cada caso, y solo suben al momento de subir de N, no obstante, son considerablemente mayores a los de la entre PE03, debido a que son procesos más complejos que retornan mayores output.
+
+
+###################################################################################################################################################################################
+
+ENTREGA P0E5
+
+En esta entrega se usarán por primera vez matrices dispersas, las cuales corresponden a dichas matrices en las cuales los ceros dentro de ella, no se consideran dentro de las operaciones matemáticas en Python, ahorrando así tiempo y memoria, además de bajar considerablemente la complejidad computacional de la operación. En 
+
+En primer lugar, se analizará el desempeño de la función MATMUL (multiplicación de matrices) para las matrices llenas Laplacianas de tamaño N creciente, corriendo 10 veces cada N, luego se graficarán las líneas de complejidad computacional y la gráfica de desempeño (en segundos) correspondiente. En segundo lugar, usando la función sparse.csr_matrix() se multiplicarán matrices dispersas laplacianas, y se analizarán de igual manera que para las matrices llenas.
