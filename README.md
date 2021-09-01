@@ -1,6 +1,6 @@
 # P0
 
-ENTREGAS EN ESTE README HASTA EL MOMENTO: P0E3 , P0E4 , P0E5.
+ENTREGAS EN ESTE README HASTA EL MOMENTO: P0E3 , P0E4 , P0E5, P0E6.
 
 Link Repositorio: https://github.com/EnzoBer1/P0
 
@@ -128,4 +128,21 @@ Puede apreciarse claramente como el tiempo de solución de A*B (o A@B) es signif
 
 En cuanto a la complejidad computacional; para las matrices llenas, solucionar el sistema tiende a estar más cerca del N**2, esto significa que al aumentar N en 2 unidades, requiero 4 veces más tiempo para resolver, y en el caso del ensamblado, es de una complejidad más bien lineal o directamente proporcional. Ahora bien, analiando las matrices dispersas ocurre algo muy interesante, la complejidad computacional de solucionar el sistema tiende a ser CONSTANTE, a diferencia del proceso de ensamblado que tiende a ser lineal. Esto indica claramente como es de INCREIBLE utilidad el uso de matrices dispersas para optimizar los tiempo de solución de MATMUL, ya que prácticamente no cambia el tiempo conforme crece N, esto significa que se podría llegar a valores de N muy grandes (del orden de 100 000) fácilmente sin esperar hasta 2 minutos en que se resuelva el sistema. Sin duda una muy buena herramienta para trabajar computacionalmente con matrices de gran tamaño. Sería interesante probar hasta cual N es posible llegar sin esperar más de 10 segundos, pero para lograr comparar diretamente los desempeños, se usaron exactamente los mismos N.
 
+###################################################################################################################################################################################
+
+ENTREGA P0E6
+
+Esta continuación de la entrega anterior (análisis de complejidad computaciona) usrará como base los mismos códigos que la entrega P0E5, con la diferencia que en este caso se analizará la complejidad computacional de SOLVE y INV para matrices laplacianas llenas y dispersas. Para todo se utilizarán datos tipo DOUBLE. Se correrán un cierto número de tamaños para la matriz varias veces cada uno.
+
+Para los 2 primeros análisis, se usarán N hasta 10000, esto debido a que el tipo de dato utilizado no permite tamaños mucho mayores por el siguiente error:
+
+![image](https://user-images.githubusercontent.com/89056734/131600209-96abb320-1727-43d7-9eea-a19669c048c2.png)
+
+Primer análisis; para este caso se analizó la complejidad de resolver el sistema A*x = b, siendo A una matriz laplaciana llena y b un vector de unos de tamaño N respectivo. Los resultados fueron los siguientes.
+
+![image](https://user-images.githubusercontent.com/89056734/131600251-9f229163-1c29-412c-8114-3ab8ecaa5c8f.png)
+
+Segundo análisis; para este caso se analizó la complejidad de resolver el sistema A*x = b, siendo A una matriz laplaciana dispersa, es decir, se utilizó la función x = lin.spsolve(A,b), siendo b un vector de unos de tamaño N respectivo. Los resultados fueron los siguientes.
+
+![image](https://user-images.githubusercontent.com/89056734/131600505-9e3d1da2-409c-4125-b930-76a71aec6887.png)
 
