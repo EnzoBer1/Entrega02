@@ -132,6 +132,8 @@ En cuanto a la complejidad computacional; para las matrices llenas, solucionar e
 
 ENTREGA P0E6
 
+MATRICES  DISPERSAS Y COMPLEJIDAD COMPUTACIONAL
+
 Esta continuación de la entrega anterior (análisis de complejidad computaciona) usrará como base los mismos códigos que la entrega P0E5, con la diferencia que en este caso se analizará la complejidad computacional de SOLVE y INV para matrices laplacianas llenas y dispersas. Para todo se utilizarán datos tipo DOUBLE. Se correrán un cierto número de tamaños para la matriz varias veces cada uno.
 
 Para los 2 primeros análisis, se usarán N hasta 10000, esto debido a que el tipo de dato utilizado no permite tamaños mucho mayores por el siguiente error:
