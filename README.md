@@ -98,6 +98,8 @@ Respuesta: Tal como se ve en los gráficos anteriores, el caso de la función sc
 
 ENTREGA P0E5
 
+MATRICES  DISPERSAS Y COMPLEJIDAD COMPUTACIONAL
+
 En esta entrega se usarán por primera vez matrices dispersas, las cuales corresponden a dichas matrices en las cuales los ceros dentro de ella, no se consideran dentro de las operaciones matemáticas en Python, ahorrando así tiempo y memoria, además de bajar considerablemente la complejidad computacional de la operación. Para ambos casos se usarán datos tipo DOUBLE y el mismo código para generar matrices laplacianas de tamaño N de las entregas pasadas, ahora dichas funciones laplacianas estarán al principio de cada código.
 
 El código de ensamblaje para la matriz laplaciana utilizado fue el siguiente:
@@ -175,9 +177,16 @@ Cuarto análisis; en esta parte se midió el desempeño y complejidad computacio
 
 ==> Comente las diferencias que ve en el comportamiento de los algoritmos en el caso de matrices llenas y dispersas.
 
+RESPUESTA:
+
 ==> ¿Cual parece la complejidad asintótica (para N→∞)  para el ensamblado y solución en ambos casos y porqué?
+
+RESPUESTA: La complejidad asintótica para matrices llenas para el caso de SOLVE tiende a ser cuadrática para la solución y lineal paa el ensamblado. Para matrices dispersas y SOLVE, tiende a ser lineal para la solución y (viendo el gráfico) cuadrática para el ensamblado. Para matrices llenas e INV, tiende a ser cuadrático y lineal para la inversión y ensamblado, respectivamente. Porúltimo para matrices dispersas e INV, tiende a ser lineal para tanto el tiempo de inversión como de ensamblado.
 
 ==> ¿Como afecta el tamaño de las matrices al comportamiento aparente?
 
+RESPUESTA:
+
 ==> ¿Qué tan estables son las corridas (se parecen todas entre si siempre, nunca, en un rango)?
 
+RESPUESTA: Para el caso de INV, tanto para matrices llenas como dispersas, a partir de un valor de N igual a 50, se observa un comportamiento más o menos estable. Por otro lado, para el caso de SOLVE para matrices dispersas, exite mucha variabilidad o inestabilidad en los tiempos de solución a lo largo de todos los valores de N, pero el ensamblado se estabiliza cuando N vale 50. Para SOLVE y matrices llenas, es bastante estable a partir de N = 50. En TODOS los casos, la mayor variabilidad se observa antes de que el valor de N llegue a 50.
