@@ -134,6 +134,23 @@ ENTREGA P0E6
 
 MATRICES  DISPERSAS Y COMPLEJIDAD COMPUTACIONAL
 
+El código de ensamblaje para la matriz laplaciana utilizado fue el siguiente:
+
+def laplaciana(N):
+
+    A = zeros((N,N), dtype = double)
+    
+    for i in range(N):
+        for j in range(i+1):
+            
+            if i == j:
+                A[i,i] = 2
+                
+            elif abs(i-j) == 1:
+                A[i,j] = -1
+                A[j,i] = -1
+    return A
+
 Esta continuación de la entrega anterior (análisis de complejidad computaciona) usrará como base los mismos códigos que la entrega P0E5, con la diferencia que en este caso se analizará la complejidad computacional de SOLVE y INV para matrices laplacianas llenas y dispersas. Para todo se utilizarán datos tipo DOUBLE. Se correrán un cierto número de tamaños para la matriz varias veces cada uno.
 
 Para los 2 primeros análisis, se usarán N hasta 10000, esto debido a que el tipo de dato utilizado no permite tamaños mucho mayores por el siguiente error:
@@ -155,4 +172,12 @@ Tercer análisis; en esta parte se midió el desempeño y complejidad computacio
 Cuarto análisis; en esta parte se midió el desempeño y complejidad computacional al invertir la matriz A (laplaciana) dispersa, para 10 valores de N desde el 2 al 10000, los resultados se presentan a continuacion. Aquí se utilizó la función lin.inv(). Lamentablemente para este caso la memoria de Python llegó al 99%, demorándose hasta 90 segundos por para un N de 10000, por lo que al hacer tender N a un valor muy grande, este es técnicamente el límite.
 
 ![image](https://user-images.githubusercontent.com/89056734/131758994-9bb543e7-2796-4e23-ad1f-86a12af8996a.png)
+
+==> Comente las diferencias que ve en el comportamiento de los algoritmos en el caso de matrices llenas y dispersas.
+
+==> ¿Cual parece la complejidad asintótica (para N→∞)  para el ensamblado y solución en ambos casos y porqué?
+
+==> ¿Como afecta el tamaño de las matrices al comportamiento aparente?
+
+==> ¿Qué tan estables son las corridas (se parecen todas entre si siempre, nunca, en un rango)?
 
