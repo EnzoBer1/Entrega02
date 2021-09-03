@@ -183,7 +183,7 @@ Por otro lado y sorpresivamente, los tiempos de inversión de las matrices dispe
 
 ==> ¿Cual parece la complejidad asintótica (para N→∞)  para el ensamblado y solución en ambos casos y porqué?
 
-RESPUESTA: La complejidad asintótica para matrices llenas para el caso de SOLVE tiende a ser cuadrática para la solución y lineal paa el ensamblado. Para matrices dispersas y SOLVE, tiende a ser lineal para la solución y (viendo el gráfico) cuadrática para el ensamblado. Para matrices llenas e INV, tiende a ser cuadrático y lineal para la inversión y ensamblado, respectivamente. Porúltimo para matrices dispersas e INV, tiende a ser lineal para tanto el tiempo de inversión como de ensamblado.
+RESPUESTA: La complejidad asintótica para matrices llenas para el caso de SOLVE tiende a ser cuadrática para la solución y lineal paa el ensamblado. Para matrices dispersas y SOLVE, tiende a ser lineal para la solución y (viendo el gráfico) cuadrática para el ensamblado. Para matrices llenas e INV, tiende a ser cuadrático y lineal para la inversión y ensamblado, respectivamente. Por último, para matrices dispersas e INV, tiende a ser lineal para tanto el tiempo de inversión como de ensamblado.
 
 ==> ¿Como afecta el tamaño de las matrices al comportamiento aparente?
 
