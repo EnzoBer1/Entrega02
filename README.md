@@ -152,7 +152,7 @@ Tercer análisis; en esta parte se midió el desempeño y complejidad computacio
 
 ![image](https://user-images.githubusercontent.com/89056734/131756690-aa4c64d3-7445-4700-84fc-4d27de816723.png)
 
-Cuarto análisis; en esta parte se midió el desempeño y complejidad computacional al invertir la matriz A (laplaciana) dispersa, para 10 valores de N desde el 2 al 10000, los resultados se presentan a continuacion. Aquí se utilizó la función lin.inv().
+Cuarto análisis; en esta parte se midió el desempeño y complejidad computacional al invertir la matriz A (laplaciana) dispersa, para 10 valores de N desde el 2 al 10000, los resultados se presentan a continuacion. Aquí se utilizó la función lin.inv(). Lamentablemente para este caso la memoria de Python llegó al 99%, demorándose hasta 90 segundos por para un N de 10000, por lo que al hacer tender N a un valor muy grande, este es técnicamente el límite.
 
 ![image](https://user-images.githubusercontent.com/89056734/131758994-9bb543e7-2796-4e23-ad1f-86a12af8996a.png)
 
