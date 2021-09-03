@@ -14,7 +14,7 @@ Incoveniente 1: Para el Caso 1 (Numpy.inv) utilizando un np.half no corrió el c
 
 ![image](https://user-images.githubusercontent.com/89056734/129997478-b018b813-8ae8-4775-9959-3cc862d650c2.png)
 
-Incoveniente 2: Para el Caso 1 (Numpy.inv) utilizando un np.longdouble no corrió el codigo, es más, ni siquiera pudo importarse al momento de crear la matriz laplaciana. Viendo el error que arroja python, se aprecia que en el caso de usar linalg con numpy, no es posible operar el float 64.
+Incoveniente 2: Para el Caso 1 (Numpy.inv) utilizando un np.longdouble no corrió el codigo, es más, ni siquiera pudo importarse al momento de crear la matriz laplaciana. Viendo el error que arroja python, se aprecia que en el caso de usar linalg con numpy, no es posible operar el float64.
 
 ![image](https://user-images.githubusercontent.com/89056734/129997533-6bd8445f-9128-4f11-a791-f58a07604baf.png)
 
@@ -179,7 +179,7 @@ Cuarto análisis; en esta parte se midió el desempeño y complejidad computacio
 
 RESPUESTA: Los tiempos de ensamblado de SOLVE e INV para matrices llenas y dispersas son muy similares, esto puede deberse a que para el computador, armar el sistema y ocupar memoria es igual para todo valor de N. Ahora bien, para SOLVE, los tiempos de solución de Ax = b para matrices dispersas son muy bajos en comparación con los tiempos de las matrices llenas.
 
-Por otro lado y sorpresivamente, los tiempos de inversión de las matrices dispersas fueron los más altos de todos los casos, llenado incluso a los 80 segundos en la corrida del N más grande (10000).
+Por otro lado y sorpresivamente, los tiempos de inversión de las matrices dispersas fueron los más altos de todos los casos, llenado incluso a los 80 segundos en la corrida del N más grande (10000). Esto puede explicarse por la razón de que invertir una matri con muchos ceros conlleva a no lograr saltarse operaciones como serñia con la función MATMUL, entonces el computador debe procesar cada elemento de la matriz, usándo así mucho tiempo.
 
 ==> ¿Cual parece la complejidad asintótica (para N→∞)  para el ensamblado y solución en ambos casos y porqué?
 
@@ -187,7 +187,7 @@ RESPUESTA: La complejidad asintótica para matrices llenas para el caso de SOLVE
 
 ==> ¿Como afecta el tamaño de las matrices al comportamiento aparente?
 
-RESPUESTA: Para todos los casos, entre mayor es el tamaño de la matriz, mayor será el tiempo que tarda tanto en ensamblar como en invertir o resolver. No obstante, el tiempo de solución de SOLVE para matrices disperss fue el que más constante se comporta, incluso (viendo el gráfico) entre N = 50 y N = 200, el tiempo disminuye conforme aumenta N.
+RESPUESTA: Para todos los casos, entre mayor es el tamaño de la matriz, mayor será el tiempo que tarda tanto en ensamblar como en invertir o resolver. No obstante, el tiempo de solución de SOLVE para matrices disperss fue el que más constante se comporta, incluso (viendo el gráfico) entre N = 50 y N = 200, el tiempo disminuye conforme aumenta N. El comportamiento esperado es una directa relación entre el tiempo y el tamaño, dependerá de los procesadores del computador que tan altos o bajos son los tiempos, pero el comportamiento no cambia.
 
 ==> ¿Qué tan estables son las corridas (se parecen todas entre si siempre, nunca, en un rango)?
 
