@@ -177,7 +177,9 @@ Cuarto análisis; en esta parte se midió el desempeño y complejidad computacio
 
 ==> Comente las diferencias que ve en el comportamiento de los algoritmos en el caso de matrices llenas y dispersas.
 
-RESPUESTA:
+RESPUESTA: Los tiempos de ensamblado de SOLVE e INV para matrices llenas y dispersas son muy similares, esto puede deberse a que para el computador, armar el sistema y ocupar memoria es igual para todo valor de N. Ahora bien, para SOLVE, los tiempos de solución de Ax = b para matrices dispersas son muy bajos en comparación con los tiempos de las matrices llenas.
+
+Por otro lado y sorpresivamente, los tiempos de inversión de las matrices dispersas fueron los más altos de todos los casos, llenado incluso a los 80 segundos en la corrida del N más grande (10000).
 
 ==> ¿Cual parece la complejidad asintótica (para N→∞)  para el ensamblado y solución en ambos casos y porqué?
 
@@ -185,7 +187,7 @@ RESPUESTA: La complejidad asintótica para matrices llenas para el caso de SOLVE
 
 ==> ¿Como afecta el tamaño de las matrices al comportamiento aparente?
 
-RESPUESTA:
+RESPUESTA: Para todos los casos, entre mayor es el tamaño de la matriz, mayor será el tiempo que tarda tanto en ensamblar como en invertir o resolver. No obstante, el tiempo de solución de SOLVE para matrices disperss fue el que más constante se comporta, incluso (viendo el gráfico) entre N = 50 y N = 200, el tiempo disminuye conforme aumenta N.
 
 ==> ¿Qué tan estables son las corridas (se parecen todas entre si siempre, nunca, en un rango)?
 
